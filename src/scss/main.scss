@@ -17,16 +17,22 @@ main {
     background: url("../img/coffee-photo.jpg") no-repeat center center/cover;
     height: 100vh;
 
+    @media screen and (max-width: 1000px) {
+        justify-content: center;
+        align-items: center;
+    }
+
     .content {
         display: flex;
         flex-direction: column;
         width: 30%;
         text-align: center;
+        overflow: hidden;
 
         background: rgba(47, 32, 11, 0.6);
 
         @media screen and (max-width: 1000px) {
-            width: 50%;
+            width: 100%;
         }
 
         &__heading {
